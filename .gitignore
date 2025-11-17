@@ -1,0 +1,3 @@
+# arquivos que não devem ser commitados para o repositório
+.venv/
+__pycache__/
