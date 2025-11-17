@@ -1,0 +1,19 @@
+{
+  "avaliacoes": [
+    {
+      "nome": "Ana Souza",
+      "score": 60,
+      "feedback": "Excelente experiência em React Native, mas falta conhecimento em UI/UX avançado."
+    },
+    {
+      "nome": "Lucas Pereira",
+      "score": 80,
+      "feedback": "Conhecimento sólido em ReactJS e Node.js, com experiência recente em React Native."
+    },
+    {
+      "nome": "Mariana Lima",
+      "score": 40,
+      "feedback": "Falta de experiência em desenvolvimento mobile avançado e conhecimento em tecnologias específicas da vaga."
+    }
+  ]
+}
