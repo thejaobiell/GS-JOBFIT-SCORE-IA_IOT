@@ -127,7 +127,7 @@ O script `run_api.sh` aceita os seguintes parâmetros:
 
 ```bash
 # Servidor público na porta 9001 com modelo específico
-./run_api.sh --host 0.0.0.0 --port 9001 --model llama3.2:2b
+./run_api.sh --host 0.0.0.0 --port 9001 --model llama3.2:3b
 
 # Apenas mudar o modelo
 ./run_api.sh --model gemma2:27b
