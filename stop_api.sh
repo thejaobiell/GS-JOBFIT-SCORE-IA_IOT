@@ -143,7 +143,7 @@ else
 fi
 
 echo -e "\n\e[32m✅ Encerramento concluído!\e[0m"
-echo -e "   \e[36mPara reiniciar, execute: ./start_api.sh\e[0m"
+echo -e "   \e[36mPara reiniciar, execute: ./run_api.sh --host 0.0.0.0\e[0m"
 
 # Aguarda 3 segundos antes de fechar
 sleep 3
