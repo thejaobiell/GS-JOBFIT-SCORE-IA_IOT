@@ -8,6 +8,16 @@
 
 ---
 
+## 🎥 Vídeo Demonstrativo
+
+Assista ao vídeo completo demonstrando o funcionamento do sistema:
+
+[![Vídeo Demonstrativo](https://img.youtube.com/vi/ERWwGtQpkZk/maxresdefault.jpg)](https://www.youtube.com/watch?v=ERWwGtQpkZk)
+
+🔗 **Link direto**: https://www.youtube.com/watch?v=ERWwGtQpkZk
+
+---
+
 ## 🎯 Sobre o Projeto
 
 O **JobFit-Score** é um sistema que avalia automaticamente a compatibilidade entre candidatos e vagas de emprego. Utiliza IA local via Ollama para análise inteligente, com fallback determinístico para funcionar mesmo sem modelos de linguagem.
