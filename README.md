@@ -14,9 +14,9 @@
 
 Assista ao vídeo completo demonstrando o funcionamento do sistema:
 
-[![Vídeo Demonstrativo](https://img.youtube.com/vi/ERWwGtQpkZk/maxresdefault.jpg)](https://www.youtube.com/watch?v=ERWwGtQpkZk)
+[![Vídeo Demonstrativo](https://img.youtube.com/vi/WjyWRQT2fok/sddefault.jpg)](https://www.youtube.com/watch?v=WjyWRQT2fok)
 
-🔗 **Link direto**: https://www.youtube.com/watch?v=ERWwGtQpkZk
+🔗 **Link direto**: https://www.youtube.com/watch?v=WjyWRQT2fok
 
 ---
 
