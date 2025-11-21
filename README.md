@@ -6,6 +6,8 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green.svg)](https://fastapi.tiangolo.com/)
 
+> 📦 **Repositório IA/IOT**: [github.com/thejaobiell/GS-JOBFIT-SCORE-IA_IOT](https://github.com/thejaobiell/GS-JOBFIT-SCORE-IA_IOT)
+
 ---
 
 ## 🎥 Vídeo Demonstrativo
@@ -47,17 +49,17 @@ O **JobFit-Score** é um sistema que avalia automaticamente a compatibilidade en
 
 ### Obrigatórios
 
-| Requisito | Versão Mínima | Link |
-|-----------|---------------|------|
-| Python | 3.10+ | [Download](https://www.python.org/downloads/) |
-| Terminal que consiga rodar arquivos .sh | Qualquer | [Git Bash](https://git-scm.com/install/) |
+| Requisito                               | Versão Mínima | Link                                          |
+| --------------------------------------- | ------------- | --------------------------------------------- |
+| Python                                  | 3.10+         | [Download](https://www.python.org/downloads/) |
+| Terminal que consiga rodar arquivos .sh | Qualquer      | [Git Bash](https://git-scm.com/install/)      |
 
 ### Para IA
 
-| Requisito | Descrição | Link |
-|-----------|-----------|------|
-| Ollama | Runtime para modelos LLM | [ollama.com](https://ollama.com/) |
-| Modelo LLM | Ex: llama3.2:3b | [Modelos](https://ollama.com/library) |
+| Requisito  | Descrição                | Link                                  |
+| ---------- | ------------------------ | ------------------------------------- |
+| Ollama     | Runtime para modelos LLM | [ollama.com](https://ollama.com/)     |
+| Modelo LLM | Ex: llama3.2:3b          | [Modelos](https://ollama.com/library) |
 
 > **Nota**: O sistema funciona sem IA usando análise determinística baseada em regras.
 
@@ -85,6 +87,7 @@ chmod +x run_api.sh stop_api.sh
 ```
 
 A API estará disponível em:
+
 - **Servidor**: http://localhost:8000
 - **Documentação**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/health
@@ -123,15 +126,15 @@ ollama serve
 
 O script `run_api.sh` aceita os seguintes parâmetros:
 
-| Parâmetro | Descrição | Exemplo |
-|-----------|-----------|---------|
-| `--host` | Define o host do servidor | `--host 0.0.0.0` |
-| `--port` | Define a porta do servidor | `--port 9000` |
-| `--model` | Modelo Ollama a usar | `--model llama3.2:1b` |
-| `--ollama-url` | URL da API do Ollama | `--ollama-url http://localhost:11434/api/generate` |
-| `--cors` | Origens CORS permitidas | `--cors "*"` |
-| `--no-install` | Pula instalação de dependências | `--no-install` |
-| `--help` | Exibe ajuda | `--help` |
+| Parâmetro      | Descrição                       | Exemplo                                            |
+| -------------- | ------------------------------- | -------------------------------------------------- |
+| `--host`       | Define o host do servidor       | `--host 0.0.0.0`                                   |
+| `--port`       | Define a porta do servidor      | `--port 9000`                                      |
+| `--model`      | Modelo Ollama a usar            | `--model llama3.2:1b`                              |
+| `--ollama-url` | URL da API do Ollama            | `--ollama-url http://localhost:11434/api/generate` |
+| `--cors`       | Origens CORS permitidas         | `--cors "*"`                                       |
+| `--no-install` | Pula instalação de dependências | `--no-install`                                     |
+| `--help`       | Exibe ajuda                     | `--help`                                           |
 
 ### Exemplos de Uso
 
@@ -169,6 +172,7 @@ http://127.0.0.1:8000
 Retorna informações gerais sobre a API.
 
 **Resposta:**
+
 ```json
 {
   "name": "GS-JobFitScore API",
@@ -186,11 +190,13 @@ Retorna informações gerais sobre a API.
 Verifica o status do sistema.
 
 **Exemplo:**
+
 ```bash
 curl http://127.0.0.1:8000/health
 ```
 
 **Resposta:**
+
 ```json
 {
   "status": "ok",
@@ -209,6 +215,7 @@ curl http://127.0.0.1:8000/health
 Avalia a compatibilidade entre candidatos e uma vaga.
 
 **Request Body:**
+
 ```json
 {
   "vaga": {
@@ -228,6 +235,7 @@ Avalia a compatibilidade entre candidatos e uma vaga.
 ```
 
 **Resposta:**
+
 ```json
 {
   "vaga": "Desenvolvedor Mobile",
@@ -249,11 +257,13 @@ Avalia a compatibilidade entre candidatos e uma vaga.
 Extrai informações estruturadas de um currículo em PDF.
 
 **Request:** multipart/form-data
+
 ```
 file: curriculo.pdf
 ```
 
 **Resposta:**
+
 ```json
 {
   "nome": "Maria Santos",
@@ -270,6 +280,7 @@ file: curriculo.pdf
 Extrai informações estruturadas de texto livre sobre o candidato.
 
 **Request Body:**
+
 ```json
 {
   "text": "Meu nome é João, tenho 3 anos de experiência com React Native, TypeScript e integração de APIs. Completei bootcamp de desenvolvimento mobile."
@@ -277,6 +288,7 @@ Extrai informações estruturadas de texto livre sobre o candidato.
 ```
 
 **Resposta:**
+
 ```json
 {
   "nome": "João",
@@ -293,6 +305,7 @@ Extrai informações estruturadas de texto livre sobre o candidato.
 Extrai informações estruturadas de uma descrição de vaga.
 
 **Request Body:**
+
 ```json
 {
   "text": "A empresa X busca Desenvolvedor Backend com experiência em Java, Spring Boot, Docker e microserviços."
@@ -300,6 +313,7 @@ Extrai informações estruturadas de uma descrição de vaga.
 ```
 
 **Resposta:**
+
 ```json
 {
   "titulo": "Desenvolvedor Backend",
@@ -315,6 +329,7 @@ Extrai informações estruturadas de uma descrição de vaga.
 Avalia um candidato através de sua auto-descrição em texto livre.
 
 **Request Body:**
+
 ```json
 {
   "vaga": {
@@ -333,6 +348,7 @@ Avalia um candidato através de sua auto-descrição em texto livre.
 Avalia compatibilidade entre descrição de vaga e auto-descrição do candidato.
 
 **Request Body:**
+
 ```json
 {
   "job_text": "Buscamos Desenvolvedor Android com experiência em Kotlin, Jetpack Compose e APIs REST.",
@@ -366,8 +382,8 @@ GS-JOBFIT-SCORE-IA_IOT/
 │       ├── __init__.py
 │       ├── ollama_client.py   # Cliente Ollama
 │       └── pdf_reader.py      # Leitor de PDF
-│  
-│   
+│
+│
 ├── examples/
 │   ├── job_fit_score_ollama.ipynb
 │   └── resultado_avaliacao_ollama.json
@@ -397,12 +413,12 @@ CORS_ORIGINS=*
 
 ### Modelos Ollama Recomendados
 
-| Modelo | Tamanho | Uso Recomendado |
-|--------|---------|-----------------|
-| llama3.2:1b | ~1GB | Testes rápidos |
-| llama3.2:3b | ~3GB | Uso geral |
-| gemma2:9b | ~9GB | Alta precisão |
-| gemma2:27b | ~27GB | Máxima qualidade |
+| Modelo      | Tamanho | Uso Recomendado  |
+| ----------- | ------- | ---------------- |
+| llama3.2:1b | ~1GB    | Testes rápidos   |
+| llama3.2:3b | ~3GB    | Uso geral        |
+| gemma2:9b   | ~9GB    | Alta precisão    |
+| gemma2:27b  | ~27GB   | Máxima qualidade |
 
 ---
 
@@ -433,4 +449,3 @@ CORS_ORIGINS=*
 </td>
 </tr>
 </table>
-
