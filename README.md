@@ -159,8 +159,8 @@ O script `run_api.sh` aceita os seguintes parâmetros:
 
 # Integração com as outras matérias
 
-Leia o arquivo `INTEGRACAO.md`
-- Contem a explicação detalhada da integração da API IA/IOT com o APP Mobile
+### Leia o arquivo [`INTEGRACAO.md`](https://github.com/thejaobiell/GS-JOBFIT-SCORE-IA_IOT/blob/main/INTEGRACAO.md)
+#### - Contem a explicação detalhada da integração da API IA/IOT com o APP Mobile
 
 ---
 
